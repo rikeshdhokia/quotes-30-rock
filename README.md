@@ -21,3 +21,9 @@ run a web app on docker in AWS ECS
 - `docker login` 
 - Push docker image up to DH
 `docker push rikeshdhokia/quotes-30-rock:latest`
+
+# BUILD MY APP INFRA
+
+- [ ] API gateway
+- [ ] ALB
+- [ ] ECS Cluster

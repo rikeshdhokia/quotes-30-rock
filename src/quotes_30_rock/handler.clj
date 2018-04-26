@@ -3,8 +3,12 @@
             [compojure.route :as route]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]))
 
+(def quotes
+  ["Science is my most favorite subject, especially the Old Testament! - Kenneth Parcel"
+   "Laugh! You sons of bitches! - Tracy Jordan" ]
+  )
 (defroutes app-routes
-  (GET "/" [] "Laugh! You sons of bitches! - Tracy Jordan")
+  (GET "/" [] (rand-nth quotes))
   (route/not-found "Not Found"))
 
 (def app
